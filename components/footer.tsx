@@ -11,7 +11,8 @@ export default function Footer() {
   return (
     <>
       <footer className="bg-transparent">
-        <div className="w-full px-4 md:px-12 lg:px-20 xl:px-32 2xl:px-48 flex flex-col items-center justify-between gap-4 py-6 md:flex-row">
+        <div className="w-full px-4 sm:px-6 md:px-8 flex h-16 items-center justify-between">
+
 
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">@Aarti Itikirala</p>
           <div className="flex items-center gap-4">

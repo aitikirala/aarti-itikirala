@@ -17,8 +17,11 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 w-full bg-transparent backdrop-blur-sm">
-      <div className="w-full px-4 md:px-12 lg:px-20 xl:px-32 2xl:px-48 flex h-16 items-center justify-between">
-        <div className="mr-4 flex">
+     <div className="w-full px-4 sm:px-6 md:px-8 flex h-16 items-center justify-between">
+
+
+
+        <div className="flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold sm:inline-block">Aarti Itikirala</span>
           </Link>
@@ -26,15 +29,16 @@ export default function Header() {
         <nav className="flex items-center gap-6 text-sm">
           {navItems.map((item) => (
             <Link
-              key={item.path}
-              href={item.path}
-              className={cn(
-                "transition-colors hover:text-foreground/80",
-                pathname === item.path ? "text-foreground font-medium" : "text-foreground/60",
-              )}
-            >
-              {item.name}
-            </Link>
+  key={item.path}
+  href={item.path}
+  className={cn(
+    "transition-colors text-white hover:text-white",
+    pathname === item.path ? "text-[#c9a2ff] font-semibold" : ""
+  )}
+>
+  {item.name}
+</Link>
+
           ))}
           <ThemeToggle />
         </nav>
