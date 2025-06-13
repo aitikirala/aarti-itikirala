@@ -21,10 +21,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-background font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="relative flex min-h-screen flex-col">
+          <div className="relative flex flex-col min-h-screen h-screen">
             <SubtleBackground />
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 overflow-auto">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>
