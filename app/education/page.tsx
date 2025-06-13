@@ -14,10 +14,10 @@ export default function EducationPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <div className="p-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-6">
-              <h2 className="text-3xl font-semibold">Master of Science in Computer Science</h2>
-              <Badge className="w-fit text-base px-3 py-1">2014 - 2016</Badge>
+              <h2 className="text-3xl font-semibold">Bachelor in Computer Science</h2>
+              <Badge className="w-fit text-base px-3 py-1">2020 - 2024</Badge>
             </div>
-            <p className="text-2xl text-muted-foreground mb-6">Stanford University</p>
+            <p className="text-2xl text-muted-foreground mb-6">University of Maryland - College Park</p>
 
             <div className="grid md:grid-cols-2 gap-8 mb-6">
               <div>
@@ -87,3 +87,4 @@ export default function EducationPage() {
     </div>
   )
 }
+

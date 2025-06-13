@@ -14,11 +14,16 @@ export default function ProjectsPage() {
       <div className="grid gap-6 md:grid-cols-2">
         <div className="border rounded-lg overflow-hidden bg-card">
           <div className="bg-muted aspect-video flex items-center justify-center">
-            <span className="text-4xl text-muted-foreground">Project Image</span>
-          </div>
+  <img
+    src="/images/photo-blog.png"
+    alt="Photo Blog"
+    className="object-cover w-full h-full"
+  />
+</div>
+
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">AI-Powered Task Manager</h2>
+              <h2 className="text-2xl font-semibold">Aarti's Photo Blog</h2>
               <div className="flex gap-2">
                 <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
@@ -31,25 +36,27 @@ export default function ProjectsPage() {
               </div>
             </div>
             <p className="mb-4">
-              A task management application that uses AI to prioritize tasks, suggest optimal scheduling, and provide
-              productivity insights.
+              A creative space to grow my passion for photography and share the stories behind my travels.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">React</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Node.js</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">TensorFlow.js</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">MongoDB</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Next.js</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">EXIF</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Blob Storage</span>
             </div>
           </div>
         </div>
 
         <div className="border rounded-lg overflow-hidden bg-card">
           <div className="bg-muted aspect-video flex items-center justify-center">
-            <span className="text-4xl text-muted-foreground">Project Image</span>
+            <img
+    src="/images/palette-pin.png"
+    alt="Palette Pin"
+    className="object-cover w-full h-full"
+  />
           </div>
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">E-Commerce Analytics Dashboard</h2>
+              <h2 className="text-2xl font-semibold">PalettePin</h2>
               <div className="flex gap-2">
                 <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
@@ -62,8 +69,8 @@ export default function ProjectsPage() {
               </div>
             </div>
             <p className="mb-4">
-              A comprehensive analytics dashboard for e-commerce businesses that visualizes sales data, customer
-              behavior, and inventory management.
+              A visual inspiration application that extracts harmonious color palettes from any image to guide fashion and interior design choices.
+
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Vue.js</span>
@@ -139,3 +146,4 @@ export default function ProjectsPage() {
     </div>
   )
 }
+
