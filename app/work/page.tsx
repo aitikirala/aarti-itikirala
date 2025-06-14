@@ -14,21 +14,22 @@ export default function WorkPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <div className="p-6">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
-              <h2 className="text-2xl font-semibold">Senior Software Engineer</h2>
-              <Badge className="w-fit">January 2021 - Present</Badge>
+              <h2 className="text-2xl font-semibold">Software Engineer</h2>
+              <Badge className="w-fit">June 2024 - Present</Badge>
             </div>
-            <p className="text-xl text-muted-foreground mb-4">Tech Innovations Inc.</p>
+            <p className="text-xl text-muted-foreground mb-4">Accenture Federal Services</p>
             <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Led the development of a microservices architecture that improved system scalability by 40%</li>
-              <li>Implemented CI/CD pipelines that reduced deployment time by 60%</li>
-              <li>Mentored junior developers and conducted code reviews to maintain code quality</li>
-              <li>Collaborated with product managers to define technical requirements and timelines</li>
+              <li>Created, tested, and deployed a financial management tool using Microsoft Azure Functions, streamlining reporting workflows across internal teams</li>
+              <li>Redesigned a manual Python script into a full-stack Synthetic Data Generator web app using Next.js, enabling non-technical users to autonomously generate test data for GCP and OCR systems; improved team productivity by eliminating 100% of manual test data creation</li>
+              <li>Engineered and launched 6+ AWS Lambda functions that automated key data movement tasks using S3 and SQS, reducing workflow latency and manual intervention by 76%</li>
             </ul>
             <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="outline">Microservices</Badge>
-              <Badge variant="outline">CI/CD</Badge>
-              <Badge variant="outline">Team Leadership</Badge>
-              <Badge variant="outline">System Architecture</Badge>
+              <Badge variant="outline">AWS</Badge>
+              <Badge variant="outline">Microsoft Azure Tools</Badge>
+              <Badge variant="outline">GCP Tools</Badge>
+              <Badge variant="outline">Google Gemini LLM Development</Badge>
+              <Badge variant="outline">Next.js</Badge>
+              <Badge variant="outline">Python</Badge>
             </div>
           </div>
         </div>
@@ -36,20 +37,19 @@ export default function WorkPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <div className="p-6">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
-              <h2 className="text-2xl font-semibold">Software Engineer</h2>
-              <Badge className="w-fit">June 2018 - December 2020</Badge>
+              <h2 className="text-2xl font-semibold">Software Engineer Intern</h2>
+              <Badge className="w-fit">July 2022 - May 2024</Badge>
             </div>
-            <p className="text-xl text-muted-foreground mb-4">Digital Solutions Corp</p>
+            <p className="text-xl text-muted-foreground mb-4">People Tech Group</p>
             <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Developed and maintained RESTful APIs using Node.js and Express</li>
-              <li>Created responsive web applications using React and Redux</li>
-              <li>Optimized database queries that improved application performance by 30%</li>
-              <li>Participated in agile development processes including daily stand-ups and sprint planning</li>
+              <li>Leveraged AWS Lambda and App Flow to design and implement a custom Github connector, enabling seamless integration and automation of code repository workflows.</li>
+              <li>Collaborated with cross-functional teams to ensure security, scalability, and efficiency.</li>
+              <li>Created a tailored Workday connector using AWS Lambda and App Flow, facilitating real-time data synchronization and automation between HR systems and internal applications.</li>
             </ul>
             <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="outline">Node.js</Badge>
-              <Badge variant="outline">React</Badge>
-              <Badge variant="outline">RESTful APIs</Badge>
+              <Badge variant="outline">AWS Lambda</Badge>
+              <Badge variant="outline">AWS AppFlow</Badge>
+              <Badge variant="outline">Version Control (Git)</Badge>
               <Badge variant="outline">Agile</Badge>
             </div>
           </div>
