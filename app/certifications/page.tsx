@@ -87,7 +87,8 @@ export default function CertificationsPage() {
             </div>
             <p className="text-muted-foreground mb-4">Amazon Web Services</p>
             <p className="mb-4">
-              
+              Comprehensive knowledge of machine learning concepts and the ability to design, implement, and deploy scalable AI/ML solutions using AWS services.
+
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline">Sagemaker</Badge>
