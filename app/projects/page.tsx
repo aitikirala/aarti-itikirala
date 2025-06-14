@@ -83,11 +83,15 @@ export default function ProjectsPage() {
 
         <div className="border rounded-lg overflow-hidden bg-card">
           <div className="bg-muted aspect-video flex items-center justify-center">
-            <span className="text-4xl text-muted-foreground">Project Image</span>
+            <img
+    src="/images/campusconnector2.png"
+    alt="Campus Connector"
+    className="object-cover w-full h-full"
+  />
           </div>
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">Health Monitoring IoT System</h2>
+              <h2 className="text-2xl font-semibold">Campus Connector</h2>
               <div className="flex gap-2">
                 <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
@@ -100,8 +104,7 @@ export default function ProjectsPage() {
               </div>
             </div>
             <p className="mb-4">
-              An IoT-based health monitoring system that collects vital signs data from wearable devices and provides
-              real-time health insights.
+              A campus-focused service marketplace app that connects UMD students with local student-run businesses for walkable, on-demand services.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Arduino</span>
@@ -114,11 +117,15 @@ export default function ProjectsPage() {
 
         <div className="border rounded-lg overflow-hidden bg-card">
           <div className="bg-muted aspect-video flex items-center justify-center">
-            <span className="text-4xl text-muted-foreground">Project Image</span>
+            <img
+    src="/images/wingman.png"
+    alt="Wingman"
+    className="object-cover w-full h-full"
+  />
           </div>
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">Augmented Reality Navigation App</h2>
+              <h2 className="text-2xl font-semibold">Wingman</h2>
               <div className="flex gap-2">
                 <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
@@ -131,8 +138,8 @@ export default function ProjectsPage() {
               </div>
             </div>
             <p className="mb-4">
-              A mobile application that uses augmented reality to provide real-time navigation guidance in indoor
-              environments like shopping malls and airports.
+              A mobile application that uses AI to generate personalized trip itineraries based on location, vibe, nearby attractions, weather, and time.
+
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">React Native</span>
