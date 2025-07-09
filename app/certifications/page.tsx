@@ -16,7 +16,7 @@ export default function CertificationsPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <a
             href="/aws_solarch.png"
-            target="_blank"
+            target="https://www.credly.com/badges/38efde8c-4e2a-436d-8003-de2bb80d7c96"
             rel="noopener noreferrer"
             className="aspect-square relative bg-muted flex items-center justify-center"
           >
@@ -32,7 +32,7 @@ export default function CertificationsPage() {
             <div className="flex justify-between items-start mb-4">
               <a
                 href="/aws_solarch.png"
-                target="_blank"
+                target="https://www.credly.com/badges/38efde8c-4e2a-436d-8003-de2bb80d7c96"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
@@ -59,7 +59,7 @@ export default function CertificationsPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <a
             href="/oracle.png"
-            target="_blank"
+            target="https://catalog-education.oracle.com/ords/certview/sharebadge?id=C2595ADA331C266FA05DC0ABFB072307347496F7124E23235875D76E31046BE1"
             rel="noopener noreferrer"
             className="aspect-square relative bg-muted flex items-center justify-center"
           >
@@ -75,7 +75,7 @@ export default function CertificationsPage() {
             <div className="flex justify-between items-start mb-4">
               <a
                 href="/oracle.png"
-                target="_blank"
+                target="https://catalog-education.oracle.com/ords/certview/sharebadge?id=C2595ADA331C266FA05DC0ABFB072307347496F7124E23235875D76E31046BE1"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
@@ -101,7 +101,7 @@ export default function CertificationsPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <a
             href="/machlearning.png"
-            target="_blank"
+            target="https://www.credly.com/badges/6c3e625b-5e9a-4896-a201-53fd209436b8"
             rel="noopener noreferrer"
             className="aspect-square relative bg-muted flex items-center justify-center"
           >
@@ -117,7 +117,7 @@ export default function CertificationsPage() {
             <div className="flex justify-between items-start mb-4">
               <a
                 href="/machlearning.png"
-                target="_blank"
+                target="https://www.credly.com/badges/6c3e625b-5e9a-4896-a201-53fd209436b8"
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
