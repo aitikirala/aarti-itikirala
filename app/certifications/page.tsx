@@ -12,8 +12,14 @@ export default function CertificationsPage() {
     <div className="container py-12">
       <h1 className="text-4xl font-bold mb-8">Certifications</h1>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {/* AWS Certification */}
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
-          <div className="aspect-square relative bg-muted flex items-center justify-center">
+          <a
+            href="/aws_solarch.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="aspect-square relative bg-muted flex items-center justify-center"
+          >
             <Image
               src="/aws_solarch.png"
               alt="AWS Certified Solutions Architect Badge"
@@ -21,11 +27,19 @@ export default function CertificationsPage() {
               height={400}
               className="object-contain p-6"
             />
-
-          </div>
+          </a>
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">AWS Certified Solutions Architect - Associate</h2>
+              <a
+                href="/aws_solarch.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <h2 className="text-2xl font-semibold">
+                  AWS Certified Solutions Architect - Associate
+                </h2>
+              </a>
             </div>
             <p className="text-muted-foreground mb-4">Amazon Web Services</p>
             <p className="mb-4">
@@ -41,8 +55,14 @@ export default function CertificationsPage() {
           </div>
         </div>
 
+        {/* Oracle Java SE 11 */}
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
-          <div className="aspect-square relative bg-muted flex items-center justify-center">
+          <a
+            href="/oracle.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="aspect-square relative bg-muted flex items-center justify-center"
+          >
             <Image
               src="/oracle.png"
               alt="Oracle Java SE 11 Developer Badge"
@@ -50,15 +70,21 @@ export default function CertificationsPage() {
               height={400}
               className="object-contain p-6"
             />
-          </div>
+          </a>
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">Oracle Java SE 11 Developer</h2>
+              <a
+                href="/oracle.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <h2 className="text-2xl font-semibold">Oracle Java SE 11 Developer</h2>
+              </a>
             </div>
             <p className="text-muted-foreground mb-4">Oracle</p>
             <p className="mb-4">
               Proficient in core Java programming with a strong understanding of object-oriented principles including encapsulation, inheritance, polymorphism, and abstraction.
-
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline">Java</Badge>
@@ -71,24 +97,36 @@ export default function CertificationsPage() {
           </div>
         </div>
 
+        {/* AWS ML Engineer */}
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
-          <div className="aspect-square relative bg-muted flex items-center justify-center">
+          <a
+            href="/machlearning.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="aspect-square relative bg-muted flex items-center justify-center"
+          >
             <Image
               src="/machlearning.png"
-              alt="AWS Certified Solutions Architect Badge"
+              alt="AWS Machine Learning Engineer Badge"
               width={400}
               height={400}
               className="object-contain p-6"
             />
-          </div>
+          </a>
           <div className="p-6">
             <div className="flex justify-between items-start mb-4">
-              <h2 className="text-2xl font-semibold">AWS Machine Learning Engineer - Associate</h2>
+              <a
+                href="/machlearning.png"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                <h2 className="text-2xl font-semibold">AWS Machine Learning Engineer - Associate</h2>
+              </a>
             </div>
             <p className="text-muted-foreground mb-4">Amazon Web Services</p>
             <p className="mb-4">
               Comprehensive knowledge of machine learning concepts and the ability to design, implement, and deploy scalable AI/ML solutions using AWS services.
-
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="outline">Sagemaker</Badge>
