@@ -25,11 +25,11 @@ export default function ProjectsPage() {
             <div className="flex justify-between items-start mb-4">
               <h2 className="text-2xl font-semibold">Aarti's Photo Blog</h2>
               <div className="flex gap-2">
-                <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/aarti-photos" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
-                <Link href="https://project-demo.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://aarti-photos.vercel.app" className="text-muted-foreground hover:text-foreground">
                   <ExternalLink className="h-5 w-5" />
                   <span className="sr-only">Live Demo</span>
                 </Link>
@@ -58,11 +58,11 @@ export default function ProjectsPage() {
             <div className="flex justify-between items-start mb-4">
               <h2 className="text-2xl font-semibold">PalettePin</h2>
               <div className="flex gap-2">
-                <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/palette_pin" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
-                <Link href="https://project-demo.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/palette_pin" className="text-muted-foreground hover:text-foreground">
                   <ExternalLink className="h-5 w-5" />
                   <span className="sr-only">Live Demo</span>
                 </Link>
@@ -73,10 +73,10 @@ export default function ProjectsPage() {
 
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Vue.js</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Express</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">D3.js</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">PostgreSQL</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">K-Means Clustering</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">OpenCV</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Algorithms</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Python</span>
             </div>
           </div>
         </div>
@@ -93,11 +93,11 @@ export default function ProjectsPage() {
             <div className="flex justify-between items-start mb-4">
               <h2 className="text-2xl font-semibold">Campus Connector</h2>
               <div className="flex gap-2">
-                <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/campusconnector" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
-                <Link href="https://project-demo.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/campusconnector" className="text-muted-foreground hover:text-foreground">
                   <ExternalLink className="h-5 w-5" />
                   <span className="sr-only">Live Demo</span>
                 </Link>
@@ -107,10 +107,10 @@ export default function ProjectsPage() {
               A campus-focused service marketplace app that connects UMD students with local student-run businesses for walkable, on-demand services.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Arduino</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Python</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">MQTT</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">AWS IoT</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">PHP</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Kotlin</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Database Design </span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">SQL</span>
             </div>
           </div>
         </div>
@@ -127,11 +127,11 @@ export default function ProjectsPage() {
             <div className="flex justify-between items-start mb-4">
               <h2 className="text-2xl font-semibold">Wingman</h2>
               <div className="flex gap-2">
-                <Link href="https://github.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/wingman_app" className="text-muted-foreground hover:text-foreground">
                   <Github className="h-5 w-5" />
                   <span className="sr-only">GitHub</span>
                 </Link>
-                <Link href="https://project-demo.com" className="text-muted-foreground hover:text-foreground">
+                <Link href="https://github.com/aitikirala/wingman_app" className="text-muted-foreground hover:text-foreground">
                   <ExternalLink className="h-5 w-5" />
                   <span className="sr-only">Live Demo</span>
                 </Link>
@@ -142,10 +142,12 @@ export default function ProjectsPage() {
 
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">React Native</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">ARKit</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">ARCore</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Flutter</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Dart</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Kotlin</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Swift</span>
               <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Firebase</span>
+              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Mobile/Web App Development</span>
             </div>
           </div>
         </div>

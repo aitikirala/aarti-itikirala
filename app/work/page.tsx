@@ -58,21 +58,20 @@ export default function WorkPage() {
         <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
           <div className="p-6">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
-              <h2 className="text-2xl font-semibold">Junior Developer</h2>
-              <Badge className="w-fit">August 2016 - May 2018</Badge>
+              <h2 className="text-2xl font-semibold">Founder</h2>
+              <Badge className="w-fit">January 2021 - Present</Badge>
             </div>
-            <p className="text-xl text-muted-foreground mb-4">WebTech Startups</p>
+            <p className="text-xl text-muted-foreground mb-4">NextGen Tutoring</p>
             <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>Built and maintained client websites using HTML, CSS, and JavaScript</li>
-              <li>Implemented responsive designs and ensured cross-browser compatibility</li>
-              <li>Assisted senior developers with debugging and testing</li>
-              <li>Collaborated with designers to implement UI/UX improvements</li>
+              <li>Built a website and Google Business page to establish an online presence, optimize client acquisition, and streamline tutoring session management.</li>
+              <li>Specialized focus in the following areas</li>
             </ul>
             <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="outline">HTML/CSS</Badge>
-              <Badge variant="outline">JavaScript</Badge>
-              <Badge variant="outline">Responsive Design</Badge>
-              <Badge variant="outline">UI/UX</Badge>
+              <Badge variant="outline">Object Oriented Programming</Badge>
+              <Badge variant="outline">College Essay Writing</Badge>
+              <Badge variant="outline">SAT/ACT</Badge>
+              <Badge variant="outline">Calculus I-III</Badge>
+              <Badge variant="outline">Data Structures</Badge>
             </div>
           </div>
         </div>
