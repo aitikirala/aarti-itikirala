@@ -84,7 +84,7 @@ export default function ProjectsPage() {
         <div className="border rounded-lg overflow-hidden bg-card">
           <div className="bg-muted aspect-video flex items-center justify-center">
             <img
-    src="/images/campusconnector2.png"
+    src="/images/campusconnector3.png"
     alt="Campus Connector"
     className="object-cover w-full h-full"
   />
