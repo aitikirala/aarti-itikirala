@@ -77,7 +77,7 @@ export default function EducationPage() {
               <div>
                 <h3 className="text-xl font-medium mb-3">Highlights:</h3>
                 <ul className="list-disc pl-5 space-y-2 mb-6">
-                  <li>Honors Humanities Student</li>
+                  <li>Honors Student</li>
                   <li>Association for Women in Computing Board Member</li>
                   <li>Recipient of the OMSE Academic Excellence Award</li>
                   <li>Women's Club Ultimate Frisbee Player </li>
