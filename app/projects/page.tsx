@@ -12,7 +12,7 @@ export default function ProjectsPage() {
     <div className="container py-12">
       <h1 className="text-4xl font-bold mb-8">Projects</h1>
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="border rounded-lg overflow-hidden bg-card">
+        <div className="rounded-lg overflow-hidden bg-card border border-border/60">
           <div className="bg-muted aspect-video flex items-center justify-center">
   <img
     src="/images/photo-blog.png"
@@ -39,14 +39,14 @@ export default function ProjectsPage() {
               A creative space to grow my passion for photography and share the stories behind my travels.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Next.js</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">EXIF</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Blob Storage</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Next.js</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">EXIF</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Blob Storage</span>
             </div>
           </div>
         </div>
 
-        <div className="border rounded-lg overflow-hidden bg-card">
+        <div className="rounded-lg overflow-hidden bg-card border border-border/60">
           <div className="bg-muted aspect-video flex items-center justify-center">
             <img
     src="/images/palette-pin.png"
@@ -73,15 +73,15 @@ export default function ProjectsPage() {
 
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">K-Means Clustering</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">OpenCV</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Algorithms</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Python</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">K-Means Clustering</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">OpenCV</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Algorithms</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Python</span>
             </div>
           </div>
         </div>
 
-        <div className="border rounded-lg overflow-hidden bg-card">
+        <div className="rounded-lg overflow-hidden bg-card border border-border/60">
           <div className="bg-muted aspect-video flex items-center justify-center">
             <img
     src="/images/campusconnector3.png"
@@ -107,15 +107,15 @@ export default function ProjectsPage() {
               A campus-focused service marketplace app that connects UMD students with local student-run businesses for walkable, on-demand services.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">PHP</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Kotlin</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Database Design </span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">SQL</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">PHP</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Kotlin</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Database Design </span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">SQL</span>
             </div>
           </div>
         </div>
 
-        <div className="border rounded-lg overflow-hidden bg-card">
+        <div className="rounded-lg overflow-hidden bg-card border border-border/60">
           <div className="bg-muted aspect-video flex items-center justify-center">
             <img
     src="/images/wingman.png"
@@ -142,12 +142,12 @@ export default function ProjectsPage() {
 
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Flutter</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Dart</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Kotlin</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Swift</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Firebase</span>
-              <span className="bg-primary/10 text-primary px-2 py-1 rounded-md text-sm">Mobile/Web App Development</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Flutter</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Dart</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Kotlin</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Swift</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Firebase</span>
+              <span className="bg-badge/40 text-white dark:bg-slate-500/30 dark:text-white px-2 py-1 rounded-md text-sm">Mobile/Web App Development</span>
             </div>
           </div>
         </div>

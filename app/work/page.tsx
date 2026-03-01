@@ -11,11 +11,32 @@ export default function WorkPage() {
     <div className="container py-12">
       <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
       <div className="grid gap-6">
-        <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
+        <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
+          <div className="p-6">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+              <h2 className="text-2xl font-semibold">Software Engineer II</h2>
+              <Badge className="w-fit">January 2026 - Present</Badge>
+            </div>
+            <p className="text-xl text-muted-foreground mb-4">JPMorgan Chase</p>
+            <ul className="list-disc pl-5 space-y-2 mb-4">
+              <li>Building production-ready full-stack features with Next.js and React.</li>
+              <li>Implementing backend services and APIs to support financial workflows.</li>
+              <li>Collaborating with cross-functional teams to deliver scalable solutions.</li>
+              <li>Utilized the Model Context Protocol (MCP) and built AI-driven solutions to detect and remediate security vulnerabilities.</li>
+            </ul>
+            <div className="flex flex-wrap gap-2 mt-4">
+              <Badge variant="outline">Next.js</Badge>
+              <Badge variant="outline">React</Badge>
+              <Badge variant="outline">Node.js</Badge>
+              <Badge variant="outline">APIs</Badge>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
           <div className="p-6">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
               <h2 className="text-2xl font-semibold">Software Engineer</h2>
-              <Badge className="w-fit">June 2024 - Present</Badge>
+              <Badge className="w-fit">June 2024 - January 2026</Badge>
             </div>
             <p className="text-xl text-muted-foreground mb-4">Accenture Federal Services</p>
             <ul className="list-disc pl-5 space-y-2 mb-4">
@@ -34,7 +55,7 @@ export default function WorkPage() {
           </div>
         </div>
 
-        <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
+        <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
           <div className="p-6">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
               <h2 className="text-2xl font-semibold">Software Engineer Intern</h2>
@@ -55,11 +76,11 @@ export default function WorkPage() {
           </div>
         </div>
 
-        <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
+        <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
           <div className="p-6">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
               <h2 className="text-2xl font-semibold">Founder</h2>
-              <Badge className="w-fit">January 2021 - Present</Badge>
+              <Badge className="w-fit">January 2021 - August 2024</Badge>
             </div>
             <p className="text-xl text-muted-foreground mb-4">NextGen Tutoring</p>
             <ul className="list-disc pl-5 space-y-2 mb-4">

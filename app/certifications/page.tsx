@@ -63,17 +63,17 @@ export default function CertificationsPage() {
 
       {/* stack all cards in 1 column */}
       <div className="grid gap-6">
-        {certs.map((c) => (
-          <CertCard key={c.title} cert={c} />
-        ))}
-      </div>
+          {certs.map((c) => (
+            <CertCard key={c.title} cert={c} />
+          ))}
+        </div>
     </div>
   )
 }
 
 function CertCard({ cert }: { cert: Cert }) {
   return (
-    <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
+    <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
       <div className="p-6 flex items-start gap-6">
         {/* bigger badge */}
         <div className="relative flex-shrink-0 w-32 h-32 md:w-40 md:h-40">

@@ -28,8 +28,8 @@ export default function SubtleBackground() {
     // Theme-aware visibility + colors
     const isDark = effectiveTheme === "dark"
 
-    // Tailwind purple-600 (#9333EA) EXACT
-    const PURPLE600 = { r: 147, g: 51,  b: 234 } // light mode
+    // Navy color used for theme primary (approx HSL 217.2 32.6% 17.5%)
+    const NAVY = { r: 18, g: 38, b: 72 } // light mode
     const GRAY200   = { r: 229, g: 231, b: 235 } // dark mode subtle
 
     // Make light mode stronger (not faint), dark mode subtle
@@ -42,10 +42,10 @@ export default function SubtleBackground() {
       `rgba(${c.r}, ${c.g}, ${c.b}, ${a})`
 
     const LINE_COLOR = (a: number) =>
-      rgba(isDark ? GRAY200 : PURPLE600, a)
+      rgba(isDark ? GRAY200 : NAVY, a)
 
     const DOT_COLOR = (a: number) =>
-      rgba(isDark ? GRAY200 : PURPLE600, a)
+      rgba(isDark ? GRAY200 : NAVY, a)
 
     // Hi-DPI sizing
     const resize = () => {

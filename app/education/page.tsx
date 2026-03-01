@@ -11,7 +11,7 @@ export default function EducationPage() {
     <div className="container py-12">
       <h1 className="text-4xl font-bold mb-8">Education</h1>
       <div className="grid gap-6">
-        <div className="border rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all">
+        <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
           <div className="p-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-6">
               <h2 className="text-3xl font-semibold">Bachelor of Science in Computer Science</h2>
