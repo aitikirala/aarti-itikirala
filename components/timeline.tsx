@@ -43,7 +43,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
       const containerRect = container.getBoundingClientRect();
       const ys: number[] = [];
 
-      // 1) collect all y positions (relative to container top)
       dateLabelRefs.current.forEach((el, i) => {
         if (!el) return;
         const r = el.getBoundingClientRect();
@@ -51,11 +50,9 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         ys[i] = centerY - containerRect.top;
       });
 
-      // 2) first valid dot y (rail should start here)
       const firstY = ys.find((v) => typeof v === "number") ?? 0;
       firstDotOffsetRef.current = firstY;
 
-      // 3) position dots relative to the rail (rail starts at firstY)
       ys.forEach((y, i) => {
         const dot = dotRefs.current[i];
         if (dot) dot.style.top = `${y - firstY}px`;
@@ -75,8 +72,8 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
       const firstY = firstDotOffsetRef.current;
 
       // ✅ rail starts at the first dot (no faint rail above it)
-      // moved rail slightly RIGHT by reducing the subtraction (32 -> 26)
-      railBg.style.left = `${containerRect.left - outerRect.left - 26}px`;
+      // ✅ moved rail more to the RIGHT by reducing the subtraction (26 -> 14)
+      railBg.style.left = `${containerRect.left - outerRect.left - 14}px`;
       railBg.style.top = `${containerRect.top - outerRect.top + firstY}px`;
       railBg.style.height = `${Math.max(0, h - firstY)}px`;
 
@@ -94,11 +91,9 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
       const progress = Math.min(Math.max(total > 0 ? scrolledPast / total : 0, 0), 1);
       const filledPx = progress * h;
 
-      // ✅ fill should also start at first dot
       const filledFromFirstDot = Math.max(0, filledPx - firstY);
       railFill.style.height = `${filledFromFirstDot}px`;
 
-      // ✅ dot fill logic stays based on original y (relative to container)
       const ys = dotYRef.current;
       ys.forEach((y, i) => {
         const inner = dotInnerRefs.current[i];
@@ -134,16 +129,13 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         {data.map((item, index) => (
           <div
             key={index}
-            // ✅ tighter spacing between cards
             className="flex justify-start pt-4 md:pt-6"
             ref={(el) => {
               itemRefs.current[index] = el;
             }}
           >
-            {/* reduced bottom padding too */}
             <div className="relative w-full min-w-0 pl-6 pr-4 pb-3">
               <div className="relative">
-                {/* ✅ label ABOVE the card */}
                 <div
                   ref={(el) => {
                     dateLabelRefs.current[index] = el;
@@ -151,16 +143,12 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
                   className="absolute top-0 -translate-y-1/2 z-20 pointer-events-none flex items-center"
                   style={{ left: 20, right: 0 }}
                 >
-                  {/* ✅ Bigger + not all caps */}
                   <span className="bg-background pr-2 py-[2px] text-sm font-medium text-muted-foreground">
                     {item.date}
                   </span>
-
-                  {/* line after date */}
                   <span className="h-px flex-1 bg-border/70" />
                 </div>
 
-                {/* card content */}
                 <div className="relative z-10 pt-2">{item.content}</div>
               </div>
             </div>
@@ -168,7 +156,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         ))}
       </div>
 
-      {/* Base faint rail (always visible) */}
       <div
         ref={railBgRef}
         className="absolute left-2 z-10 w-[2px]"
@@ -177,7 +164,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
           boxShadow: "0 0 0 1px hsl(var(--border) / 0.10)",
         }}
       >
-        {/* Colored fill rail (animates on scroll) */}
         <div
           ref={railFillRef}
           style={{
@@ -191,7 +177,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
           }}
         />
 
-        {/* Dots */}
         {data.map((_, index) => (
           <div
             key={`dot-${index}`}
@@ -206,7 +191,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
               width: "14px",
               height: "14px",
               borderRadius: "9999px",
-              // inactive dot = faint gray fill
               background: "hsl(var(--border) / 0.35)",
             }}
           >
