@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
+import CertificationsSpotlight from "./certifications-spotlight"
 
 export const metadata: Metadata = {
   title: "Aarti Itikirala | Certifications",
@@ -41,41 +40,12 @@ export default function CertificationsPage() {
   ]
 
   return (
-  <div className="container relative min-h-screen py-12">
-    <h1 className="text-4xl font-bold">Certifications</h1>
-
-    {/* HARD SPACER: guaranteed visible space */}
-    <div aria-hidden className="h-16 md:h-24" />
-
-    <div className="flex flex-row flex-nowrap justify-center gap-12 md:gap-24 w-full">
-      {certs.map((c) => (
-  <div key={c.title} className="flex flex-col items-center text-center shrink-0">
-  {/* Clickable badge */}
-  <Link
-    href={c.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label={`Open credential: ${c.title}`}
-    className="group block shrink-0"
-  >
-    <Image
-      src={c.imgSrc}
-      alt={c.imgAlt}
-      width={320}
-      height={320}
-      className="object-contain w-56 h-56 md:w-80 md:h-80 transition-transform duration-200 group-hover:scale-[1.02]"
-      priority
-    />
-  </Link>
-
-  {/* Spacer between badge and issued text */}
-  <div aria-hidden className="h-6 md:h-8" />
-
-  <p className="text-sm text-muted-foreground tracking-tight">
-    Issued: {c.issued}
-  </p>
-</div>
-))}
+  <div className="relative min-h-screen">
+    {/* Centered overlay (accounts for header + footer) */}
+    <div className="fixed inset-0 flex items-center justify-center pt-16 pb-16">
+      <div className="container">
+        <CertificationsSpotlight certs={certs} />
+      </div>
     </div>
   </div>
 )
