@@ -72,3 +72,41 @@
 .animate-fade-in {
   animation: fade-in 1s ease-out forwards;
 }
+
+/* Timeline styles */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 420ms ease-out, transform 420ms ease-out;
+}
+.timeline-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timeline-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: hsl(var(--card-foreground));
+  border: 2px solid hsl(var(--badge-outline));
+  box-shadow: 0 0 0 3px hsl(var(--card));
+  z-index: 20;
+  transition: background-color 240ms ease, border-color 240ms ease, transform 200ms ease, box-shadow 240ms ease;
+}
+.timeline-item.is-visible .timeline-dot {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px hsl(var(--primary));
+  transform: scale(1.1);
+}
+.timeline-fill {
+  z-index: 0;
+  transition: height 280ms ease, opacity 280ms ease;
+  will-change: height, opacity;
+}
+.timeline-content {
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item, .animate-fade-in { transition: none !important; animation: none !important; }
+}
