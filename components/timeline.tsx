@@ -120,14 +120,14 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-32"
+            className="flex justify-start pt-10 md:pt-14"
             ref={(el) => {
               itemRefs.current[index] = el;
             }}
           >
             <div className="relative w-full min-w-0 pl-6 pr-4 pb-8">
               <div className="relative">
-                {/* Date label */}
+                {/* ✅ label ABOVE the card */}
                 <div
                   ref={(el) => {
                     dateLabelRefs.current[index] = el;
@@ -135,12 +135,16 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
                   className="absolute top-0 -translate-y-1/2 z-20 pointer-events-none flex items-center"
                   style={{ left: 20, right: 0 }}
                 >
-                  <span className="bg-background pr-2 py-[2px] text-[11px] tracking-wide text-muted-foreground uppercase">
+                  {/* ✅ Date text (no uppercase + consistent size) */}
+                  <span className="bg-background pr-2 py-[2px] text-xs text-muted-foreground">
                     {item.date}
                   </span>
+
+                  {/* Line starts immediately after text and stretches */}
                   <span className="h-px flex-1 bg-border/70" />
                 </div>
 
+                {/* ✅ card is explicitly below label */}
                 <div className="relative z-10 pt-2">{item.content}</div>
               </div>
             </div>
@@ -148,18 +152,14 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         ))}
       </div>
 
-      {/* Base faint rail (always visible) */}
       <div
         ref={railBgRef}
         className="absolute top-0 left-2 z-10 w-[2px]"
         style={{
-          // ✅ always-visible faint gray rail
           background: "hsl(var(--border) / 0.35)",
-          // optional: makes it easier to see without being harsh
           boxShadow: "0 0 0 1px hsl(var(--border) / 0.10)",
         }}
       >
-        {/* Colored fill rail (animates on scroll) */}
         <div
           ref={railFillRef}
           style={{
@@ -173,7 +173,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
           }}
         />
 
-        {/* Dots */}
         {data.map((_, index) => (
           <div
             key={`dot-${index}`}
@@ -188,7 +187,6 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
               width: "14px",
               height: "14px",
               borderRadius: "9999px",
-              // ✅ inactive dot = faint gray fill
               background: "hsl(var(--border) / 0.35)",
             }}
           >
