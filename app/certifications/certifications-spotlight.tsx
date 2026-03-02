@@ -20,7 +20,7 @@ export default function CertificationsSpotlight({ certs }: { certs: Cert[] }) {
       {/* optional debug */}
       {/* <p className="mb-6 text-sm text-muted-foreground">Hover active: {active === null ? "none" : certs[active]?.title}</p> */}
 
-      <div className="flex flex-row flex-nowrap justify-center gap-12 md:gap-24 w-full">
+      <div className="flex flex-row flex-nowrap justify-center gap-6 md:gap-10 lg:gap-12 w-full">
         {certs.map((c, i) => {
           const isActive = active === i
           const isDimmed = active !== null && !isActive
