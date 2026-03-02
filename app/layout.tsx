@@ -9,22 +9,18 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Aarti Itikirala",
   description: "Personal website of Aarti Itikirala",
-  generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen bg-background font-sans antialiased">
+    <html lang="en" suppressHydrationWarning className="h-full">
+      <body className="h-full bg-background font-sans antialiased">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="relative flex flex-col min-h-screen">
+          <div className="relative min-h-[100dvh] grid grid-rows-[auto,1fr,auto]">
             <SubtleBackground />
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="min-h-0">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>

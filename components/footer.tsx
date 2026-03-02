@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="bg-transparent">
+      <footer className="bg-transparent fixed bottom-0 left-0 right-0 z-50">
         <div className="w-full px-4 sm:px-6 md:px-8 flex h-16 items-center justify-center gap-6">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} By Aarti Itikirala
