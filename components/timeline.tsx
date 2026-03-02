@@ -148,13 +148,15 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
         ))}
       </div>
 
-      {/* Base grey rail (always visible) */}
+      {/* Base faint rail (always visible) */}
       <div
         ref={railBgRef}
         className="absolute top-0 left-2 z-10 w-[2px]"
         style={{
-          background:
-            "linear-gradient(to bottom, hsl(var(--border) / 0.35) 0%, hsl(var(--border) / 0.35) 100%)",
+          // ✅ always-visible faint gray rail
+          background: "hsl(var(--border) / 0.35)",
+          // optional: makes it easier to see without being harsh
+          boxShadow: "0 0 0 1px hsl(var(--border) / 0.10)",
         }}
       >
         {/* Colored fill rail (animates on scroll) */}
@@ -171,6 +173,7 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
           }}
         />
 
+        {/* Dots */}
         {data.map((_, index) => (
           <div
             key={`dot-${index}`}
@@ -185,6 +188,7 @@ export function Timeline({ data }: { data: TimelineEntry[] }) {
               width: "14px",
               height: "14px",
               borderRadius: "9999px",
+              // ✅ inactive dot = faint gray fill
               background: "hsl(var(--border) / 0.35)",
             }}
           >
