@@ -144,7 +144,6 @@ export default function WorkPage() {
 
   return (
     <div className="container py-12 pl-4">
-      <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
       <div className="-ml-4">
         <Timeline data={data} />
       </div>

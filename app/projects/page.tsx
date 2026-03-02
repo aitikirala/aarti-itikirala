@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <div className="container py-12">
-      <h1 className="text-4xl font-bold mb-8">Projects</h1>
       <div className="grid gap-6 md:grid-cols-2">
         <div className="rounded-lg overflow-hidden bg-card border border-border/60">
           <div className="bg-muted aspect-video flex items-center justify-center">

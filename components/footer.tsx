@@ -3,18 +3,25 @@
 import Link from "next/link"
 import { Github, Linkedin, FileText } from "lucide-react"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import ResumeViewer from "./resume-viewer"
 
 export default function Footer() {
   const [showResume, setShowResume] = useState(false)
+  const pathname = usePathname()
+
+  // Only pin footer on these routes
+  const fixedRoutes = new Set<string>(["/", "/education", "/certifications"])
+  const isFixed = fixedRoutes.has(pathname)
 
   return (
     <>
-      <footer className="bg-transparent fixed bottom-0 left-0 right-0 z-50">
+      <footer className={isFixed ? "bg-transparent fixed bottom-0 left-0 right-0 z-50" : "bg-transparent"}>
         <div className="w-full px-4 sm:px-6 md:px-8 flex h-16 items-center justify-center gap-6">
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} By Aarti Itikirala
           </p>
+
           <Link
             href="https://github.com/aitikirala"
             target="_blank"
@@ -24,6 +31,7 @@ export default function Footer() {
             <Github className="h-5 w-5" />
             <span className="sr-only">GitHub</span>
           </Link>
+
           <Link
             href="https://www.linkedin.com/in/aarti-itikirala/"
             target="_blank"
@@ -33,6 +41,7 @@ export default function Footer() {
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
+
           <button
             onClick={() => setShowResume(true)}
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground"
@@ -43,6 +52,7 @@ export default function Footer() {
           </button>
         </div>
       </footer>
+
       {showResume && <ResumeViewer onClose={() => setShowResume(false)} />}
     </>
   )

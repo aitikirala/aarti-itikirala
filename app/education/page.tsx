@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 export default function EducationPage() {
   return (
     <div className="container py-12">
-      <h1 className="text-4xl font-bold mb-8">Education</h1>
       <div className="grid gap-6">
         <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
           <div className="p-8">
