@@ -91,35 +91,36 @@ export default function WorkPage() {
     ),
   },
   {
-    date: "January 2021 - August 2024",
-    content: (
-      <div className="grid gap-6 mb-8">
-        <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
-          <div className="p-6">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
-              <h2 className="text-2xl font-semibold">Founder</h2>
-            </div>
-            <p className="text-xl text-muted-foreground mb-4">NextGen Tutoring</p>
-            <ul className="list-disc pl-5 space-y-2 mb-4">
-              <li>
-                Founded and managed a tutoring business focused on computer science, mathematics, standardized testing, and college essay support.
-              </li>
-              <li>
-                Built a website and Google Business presence to support client acquisition, online visibility, and tutoring session management.
-              </li>
-            </ul>
-            <div className="flex flex-wrap gap-2 mt-4">
-              <Badge variant="outline">Object-Oriented Programming</Badge>
-              <Badge variant="outline">Data Structures</Badge>
-              <Badge variant="outline">Calculus I-III</Badge>
-              <Badge variant="outline">SAT/ACT</Badge>
-              <Badge variant="outline">College Essay Writing</Badge>
-            </div>
+  date: "July 2022 - May 2024",
+  content: (
+    <div className="grid gap-6 mb-8">
+      <div className="rounded-lg overflow-hidden bg-card/50 backdrop-blur-sm hover:shadow-md transition-all border border-border/60">
+        <div className="p-6">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+            <h2 className="text-2xl font-semibold">Software Engineer Intern</h2>
+          </div>
+          <p className="text-xl text-muted-foreground mb-4">People Tech Group</p>
+          <ul className="list-disc pl-5 space-y-2 mb-4">
+            <li>
+              Built custom AWS AppFlow and Lambda-based integrations for GitHub and Workday, automating enterprise data synchronization and workflow management.
+            </li>
+            <li>
+              Collaborated with cross-functional engineering teams to design secure, scalable connector workflows for enterprise application integrations.
+            </li>
+          </ul>
+          <div className="flex flex-wrap gap-2 mt-4">
+            <Badge variant="outline">AWS Lambda</Badge>
+            <Badge variant="outline">AWS AppFlow</Badge>
+            <Badge variant="outline">GitHub</Badge>
+            <Badge variant="outline">Workday</Badge>
+            <Badge variant="outline">Enterprise Integrations</Badge>
+            <Badge variant="outline">APIs</Badge>
           </div>
         </div>
       </div>
-    ),
-  },
+    </div>
+  ),
+},
 ];
 
   return (
